@@ -24,6 +24,7 @@ import coil.compose.AsyncImage
 @ExperimentalTvMaterial3Api
 @Composable
 fun HomeCarousel(url: String,
+
     modifier: Modifier = Modifier
 ) {
     var items by remember { mutableStateOf(emptyList<TvItem>()) }
@@ -36,10 +37,12 @@ fun HomeCarousel(url: String,
         CarouselState()
     }
 
+    val displayTime : Long = 3500
+
     Carousel(
         modifier = modifier,
         carouselState = state,
-        autoScrollDurationMillis = 3500,
+        autoScrollDurationMillis = displayTime,
         carouselIndicator = {
             CarouselDefaults.IndicatorRow(
                 slideCount = 0,

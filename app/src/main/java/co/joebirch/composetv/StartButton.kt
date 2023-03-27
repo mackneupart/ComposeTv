@@ -73,6 +73,47 @@ fun StartButton(
                     fontWeight = FontWeight.Bold,
                 )
             }
+            Row() {
+                Text(
+                    text = "Hastighed: ",
+                    fontSize = MaterialTheme.typography.h5.fontSize,
+                    fontWeight = FontWeight.Bold,
+                )
+                Button(
+                    modifier = Modifier.padding(16.dp),
+                    onClick = {},
+
+                    ) {
+                    Text(
+                        text = "5 sec",
+                        fontSize = MaterialTheme.typography.h5.fontSize,
+                        fontWeight = FontWeight.Bold,
+                    )
+                }
+                    Button(
+                        modifier = Modifier.padding(16.dp),
+                        onClick = {},
+
+                        ) {
+                        Text(
+                            text = "30 sec",
+                            fontSize = MaterialTheme.typography.h5.fontSize,
+                            fontWeight = FontWeight.Bold,
+                        )
+                    }
+                        Button(
+                            modifier = Modifier.padding(16.dp),
+                            onClick = {},
+
+                            ) {
+                            Text(
+                                text = "1 min",
+                                fontSize = MaterialTheme.typography.h5.fontSize,
+                                fontWeight = FontWeight.Bold,
+                            )
+                        }
+
+                    }
         }
     }
 }
