@@ -25,10 +25,8 @@ class MainActivity : ComponentActivity() {
 
 /*
 Todoliste:
+        - knap til afspilningshastighed
         - refactoring: give bedre navne, fikse indrykning, etc.
-        - en start-menu med en start-knap
-        - i stedet for start-knap: tre playlister med hver sin knap (heste, skoven, sommer)
-        - billeder skal fade sammen med tekst
-        - bruge de store billeder, ikke thumbnails
-        - main activity giver fejl: find ud af hvorfor + fiks det.
+        - bruge de store billeder, ikke thumbnails (spørg SMK om hjælp)
+        - tekst og billeder skal vises synkront, også med dårligt netværk
 */
