@@ -25,4 +25,6 @@ class DataParser {
         //TODO: Implement a check for copyright in the JSON object
         return true
     }
+
+
 }

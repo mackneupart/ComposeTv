@@ -9,7 +9,6 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.tv.material3.Carousel
 import androidx.tv.material3.CarouselDefaults
 import androidx.tv.material3.CarouselState
@@ -18,17 +17,16 @@ import co.joebirch.composetv.DataFactory.makeCarouselItem
 import coil.compose.AsyncImage
 
 @SuppressLint("ComposableNaming")
-@Preview
 @ExperimentalAnimationApi
 @ExperimentalTvMaterial3Api
 @Composable
-fun HomeCarousel(
+fun HomeCarousel(url: String,
     modifier: Modifier = Modifier
 ) {
     var items by remember { mutableStateOf(emptyList<TvItem>()) }
 
     LaunchedEffect(Unit) {
-        items = makeCarouselItem()
+        items = makeCarouselItem(url)
     }
 
     val state = remember {
@@ -38,7 +36,7 @@ fun HomeCarousel(
     Carousel(
         modifier = modifier,
         carouselState = state,
-        autoScrollDurationMillis = 3500,
+        autoScrollDurationMillis = 7500,
         carouselIndicator = {
             CarouselDefaults.IndicatorRow(
                 slideCount = 0,
