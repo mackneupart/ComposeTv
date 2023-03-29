@@ -36,7 +36,7 @@ fun HomeCarousel(url: String,
     }
 
     Carousel(
-        modifier = Modifier.background(color = Color.DarkGray), //skift til hvid baggrund senere
+        modifier = Modifier.background(color = Color.Gray), //skift til hvid baggrund senere
         carouselState = state,
         autoScrollDurationMillis = 7500,
         carouselIndicator = {

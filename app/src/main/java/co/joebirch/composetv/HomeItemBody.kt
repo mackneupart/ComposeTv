@@ -22,13 +22,15 @@ fun HomeItemBody(item: TvItem) {
                 .wrapContentWidth()
                 .wrapContentHeight()
                 .background(color= Color.DarkGray)
-                .align(Alignment.BottomCenter)
+                .align(Alignment.BottomStart)
         ) {
             Text(
-                text = item.title + " (${item.year})", fontSize = 20.sp, color = Color.White,
+                modifier = Modifier.padding(start = 8.dp, end = 8.dp, top = 8.dp),
+                text = item.title + " (${item.year})", fontSize = 16.sp, color = Color.White,
             )
             Text(
-                text = item.artist, fontSize = 16.sp, color = Color.White, fontStyle = FontStyle.Italic,
+                modifier = Modifier.padding(start = 8.dp, end = 8.dp, bottom = 8.dp ),
+                text = item.artist, fontSize = 12.sp, color = Color.White, fontStyle = FontStyle.Italic,
             )
         }
     }
