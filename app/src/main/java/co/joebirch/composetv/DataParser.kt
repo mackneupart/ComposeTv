@@ -1,8 +1,7 @@
 package co.joebirch.composetv
 
 class DataParser {
-    // input a shareable 'favorite list' from SMK Open
-    // example: https://open.smk.dk/shared-list?list=KMS5807,KMSsp731,KMS7980&list_title=hestehoved%20123
+
      fun getObjectIDs(listUrl: String): ArrayList<String> {
         val objectIDs = ArrayList<String>()
         val objects = listUrl.split("[,=&]".toRegex())
