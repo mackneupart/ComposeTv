@@ -6,10 +6,11 @@ import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.graphics.Color
 import androidx.tv.material3.Carousel
 import androidx.tv.material3.CarouselDefaults
 import androidx.tv.material3.CarouselState
@@ -17,7 +18,6 @@ import androidx.tv.material3.ExperimentalTvMaterial3Api
 import co.joebirch.composetv.DataFactory.makeCarouselItem
 import coil.compose.AsyncImage
 
-@Preview
 @SuppressLint("ComposableNaming")
 @ExperimentalAnimationApi
 @ExperimentalTvMaterial3Api
@@ -36,7 +36,7 @@ fun HomeCarousel(url: String,
     }
 
     Carousel(
-        modifier = modifier,
+        modifier = Modifier.background(color = Color.DarkGray), //skift til hvid baggrund senere
         carouselState = state,
         autoScrollDurationMillis = 7500,
         carouselIndicator = {
