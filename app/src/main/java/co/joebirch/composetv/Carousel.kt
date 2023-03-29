@@ -9,6 +9,7 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.tv.material3.Carousel
 import androidx.tv.material3.CarouselDefaults
 import androidx.tv.material3.CarouselState
@@ -16,6 +17,7 @@ import androidx.tv.material3.ExperimentalTvMaterial3Api
 import co.joebirch.composetv.DataFactory.makeCarouselItem
 import coil.compose.AsyncImage
 
+@Preview
 @SuppressLint("ComposableNaming")
 @ExperimentalAnimationApi
 @ExperimentalTvMaterial3Api
