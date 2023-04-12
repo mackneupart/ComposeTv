@@ -30,11 +30,9 @@ fun HomeCarousel(url: String,
     LaunchedEffect(Unit) {
         items = makeCarouselItem(url)
     }
-
     val state = remember {
         CarouselState()
     }
-
     Carousel(
         modifier = Modifier.background(color = Color.Gray), //skift til hvid baggrund senere
         carouselState = state,
@@ -67,5 +65,4 @@ fun HomeCarousel(url: String,
             }
         }
     )
-
 }
