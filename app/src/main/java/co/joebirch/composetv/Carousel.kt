@@ -11,6 +11,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.key.Key
+import androidx.compose.ui.input.key.KeyEvent
+import androidx.compose.ui.input.key.onKeyEvent
 import androidx.tv.material3.Carousel
 import androidx.tv.material3.CarouselDefaults
 import androidx.tv.material3.CarouselState
@@ -34,7 +37,7 @@ fun HomeCarousel(url: String,
         CarouselState()
     }
     Carousel(
-        modifier = Modifier.background(color = Color.Gray), //skift til hvid baggrund senere
+        modifier = Modifier.background(color = Color(0xFFFAFAFA)), // Sets the background color to off-white
         carouselState = state,
         autoScrollDurationMillis = 7500,
         carouselIndicator = {
